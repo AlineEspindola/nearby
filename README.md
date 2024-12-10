@@ -1,2 +1,2 @@
-# nearby-app
+# nearby
 Um aplicativo em React Native que exibe locais com cupons de desconto
