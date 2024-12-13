@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { colors, fontFamily } from "@/styles/theme"
+import { colors, fontFamily } from "@/styles/theme";
 
 export const s = StyleSheet.create({
   container: {
@@ -19,7 +19,6 @@ export const s = StyleSheet.create({
     fontSize: 14,
     fontFamily: fontFamily.regular,
     color: colors.gray[500],
-    marginTop: 4
-
-  }
-})
+    marginTop: 4,
+  },
+});

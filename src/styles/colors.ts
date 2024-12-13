@@ -19,4 +19,4 @@ export const colors = {
     light: "#FDEDED",
     base: "#F94144",
   },
-}
+};
