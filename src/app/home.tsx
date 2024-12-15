@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { View, Alert, Text } from "react-native";
 import MapView, { Callout, Marker } from "react-native-maps";
+import { router } from "expo-router";
 
 import * as Location from "expo-location";
 
@@ -109,7 +110,7 @@ export default function Home() {
             }}
             image={require("@/assets/pin.png")}
           >
-            <Callout>
+            <Callout onPress={() => router.push({ pathname: "/market/[id]", params: { id: item.id } })}>
               <View>
                 <Text style={{ fontSize: 14, color: colors.gray[600], fontFamily: fontFamily.medium }}>{item.name}</Text>
                 <Text style={{ fontSize: 14, color: colors.gray[600], fontFamily: fontFamily.regular }} >{item.address}</Text>
